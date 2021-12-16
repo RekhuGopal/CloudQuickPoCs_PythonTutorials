@@ -1,17 +1,19 @@
 ## Varaibels decalration
 x = 5
-y = "John"
+y = "Lion"
 print(x)
 print(y)
 
 ## Variables overwritting
 x = 4       # x is of type int
-x = "Sally" # x is now of type str
+x = "Sunday" # x is now of type str
 print(x)
 
 ## Case senstives
 A =  "AWS"
 a =  "Azure"
+print(a)
+print(A)
 
 ## Variabels casting
 x = str(3)    # x will be '3'

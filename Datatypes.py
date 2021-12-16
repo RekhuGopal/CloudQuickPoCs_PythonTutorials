@@ -1,42 +1,59 @@
 ## String
-x = "Hello World"
+String = "HelloWorld"
+print(String)
 
 ## int
-x = 20
+integer = 20
+print(integer)
 
 ## float
-x = 20.5
+float = 20.5
+print(float)
 
 ## complex
-x = 1j
+complex = 1j
+print(complex)
 
 ## List
-x = ["dog", "cat", "horse"]
+List = ["dog", "cat", "horse"]
+print(List)
 
 ## tuples
-x = ("apple", "banana", "cherry")
+tuples = ("apple", "banana", "cherry")
+print(tuples)
 
 ## range
-x = range(6)
+rangex = range(6)
+print(rangex)
+
 
 ## dictionary
-x = {"name" : "John", "age" : 36}
+dictionary = {"name" : "John", "age" : 36}
+print(dictionary)
 
 ## set
-x = {"apple", "banana", "cherry"}
+set = {"apple", "20", "feee", 2}
+print(set)
 
 ## frozenset
-x = frozenset({"apple", "banana", "cherry"})
+frozenset = frozenset({"A", "B", "C"})
+print(frozenset)
 
 ## boolean
-x = True
-y = False
+booleanx = True
+print(booleanx)
+booleany = False
+print(booleany)
+
 
 ## bytes
-x = b"Hello"
+bytesx = bytes(4)
+print(bytesx)
 
 ## bytearray
-x = bytearray(5)
+bytearrayx = bytearray(5)
+print(bytearrayx)
 
 ## memoryview
-x = memoryview(bytes(5))
+x = memoryview(bytes(6))
+print(x)
