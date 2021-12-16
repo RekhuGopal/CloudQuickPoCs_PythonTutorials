@@ -1,6 +1,6 @@
 ## single arguement formating in string
 age = 26
-txt = "My name is rob, and I am {}"
+txt = "My name is bob, and I am {}"
 print(txt.format(age))
 
 ## multiple arguement formating in string

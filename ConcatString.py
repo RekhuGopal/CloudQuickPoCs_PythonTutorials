@@ -1,4 +1,3 @@
-
 ## String Concatenation
 a = "Hi"
 b = "There"

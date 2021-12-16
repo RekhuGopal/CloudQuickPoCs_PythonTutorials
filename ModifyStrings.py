@@ -1,23 +1,19 @@
 ## upper case:
-a = "Hi, There!"
+a = "cloudquickPOCs"
 print(a.upper())
 
 ## lower case:
-a = "Hi, There!"
+a = "CLOUDQUICKPOCS"
 print(a.lower())
 
 ## Remove Whitespace
-a = " Hi, There! "
+a = " CLOUDQUICKPOCS "
 print(a.strip()) 
 
 ## Replace String
-a = "Hi, There!"
-print(a.replace("H", "J"))
+a = "CLOUDQUICKPOCS"
+print(a.replace("C", "J"))
 
 ## Split String
-a = "Hi, There!"
-print(a.split(",")) # returns ['Hi', ' There!']
-
-##
-
-
+a = "Hello, CLOUDQUICKPOCS"
+print(a.split(",")) # returns ['Hello', 'CLOUDQUICKPOCS']
