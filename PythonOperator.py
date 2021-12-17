@@ -11,7 +11,7 @@ print(12 // 5)
 b1= 10
 print(b1)
 b2 = 10
-b2 +=10 # b2 = b2+10
+b2 +=10 # b2 = (b2+10)
 print(b2)
 b3 = 11
 b3 -= 10 # b3 = b3-10
@@ -40,14 +40,11 @@ print(b10)
 b11 = 12
 b11 ^= 10 # b11 = b11^10
 print(b11)
-b12 = 12
-b12 ^= 10 # b12 = b12^10
-print(b12)
 b13 = 12
-b13 >>= 10 # b13 = b13>>10
+b13 >>= 10 # b13 = b13>>10 # right shift
 print(b13)
 b14 = 12
-b14 <<= 10 # b13 = b14<<10
+b14 <<= 10 # b13 = b14<<10 # left shift
 print(b14)
 
 ## Comparision operators    [ ==, !=, >, <, >=, <= ]
@@ -141,8 +138,8 @@ print (c)
 c = ~a;           # -61 = 1100 0011
 print (c) 
 
-c = a << 2;       # 240 = 1111 0000
+c = a << 2;       # 240 = 1111 0000 # left shift
 print (c) 
 
-c = a >> 2;       # 15 = 0000 1111
+c = a >> 2;       # 15 = 0000 1111 # Righ shift
 print (c) 
