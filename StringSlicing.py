@@ -14,4 +14,4 @@ print(b[2:])
 
 ## Negative Indexing
 b = "CLOUDQUICKPOCS"
-print(b[-5:-2])
+print(b[-5:-4])
