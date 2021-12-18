@@ -81,7 +81,7 @@ for x in thistuple:
 
 # for loop with range() and len()
 thistuple = ("A", "B", "C")
-for i in range(len(thistuple)):
+for i in range(len(thistuple)): # 0 ,1 ,2
   print(thistuple[i])
 
 # whie loop
@@ -102,6 +102,6 @@ print(tuple3)
 
 # Multiply the fruits tuple by 2:
 fruits = ("A", "B", "C")
-mytuple = fruits * 2
+mytuple = fruits * 4
 
 print(mytuple)

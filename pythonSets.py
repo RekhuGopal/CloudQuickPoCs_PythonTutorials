@@ -1,81 +1,80 @@
 # Create a Set:
-thisset = {"apple", "banana", "cherry"}
+thisset = {"A", "B", "C"}
 print(thisset)
 
 # Duplicate values will be ignored:
-thisset = {"apple", "banana", "cherry", "apple"}
+thisset = {"A", "B", "C", "A"}
 print(thisset)
 
 # Get the number of items in a set:
-thisset = {"apple", "banana", "cherry"}
+thisset = {"A", "B", "C"}
 print(len(thisset))
 
 ######################################## Access Sets Items ################################################################################
 
 # You cannot access items in a set by referring to an index or a key.
-thisset = {"apple", "banana", "cherry"}
+thisset = {"A", "B", "C"}
 for x in thisset:
   print(x)
 
 
-# Check if "banana" is present in the set:
-thisset = {"apple", "banana", "cherry"}
-print("banana" in thisset)
+# Check if "B" is present in the set:
+thisset = {"A", "B", "C"}
+print("B" in thisset)
 
 ######################################## Add Sets Items ##################################################################################
 # Add an item to a set, using the add() method:
-thisset = {"apple", "banana", "cherry"}
-thisset.add("orange")
+thisset = {"A", "B", "C"}
+thisset.add("O")
 print(thisset)
 
 
 # Add elements from tropical into thisset:
-thisset = {"apple", "banana", "cherry"}
-tropical = {"pineapple", "mango", "papaya"}
+thisset = {"A", "B", "C"}
+tropical = {"A", "M", "P"}
 thisset.update(tropical)
 print(thisset)
 
 # Add elements of a list to at set:
-thisset = {"apple", "banana", "cherry"}
-mylist = ["kiwi", "orange"]
+thisset = {"A", "B", "C"}
+mylist = ["K", "O"]
 thisset.update(mylist)
 print(thisset)
 
 
 ######################################## Remove Sets Items ##################################################################################
 
-# Remove "banana" by using the remove() method:
-thisset = {"apple", "banana", "cherry"}
-thisset.remove("banana")
+# Remove "B" by using the remove() method:
+thisset = {"A", "B", "C"}
+thisset.remove("B")
 print(thisset)
 
-# Remove "banana" by using the discard() method:
-thisset = {"apple", "banana", "cherry"}
-thisset.discard("banana")
+# Remove "B" by using the discard() method:
+thisset = {"A", "B", "C"}
+thisset.discard("B")
 print(thisset)
 
 # Remove the last item by using the pop() method:
-thisset = {"apple", "banana", "cherry"}
+thisset = {"A", "B", "C"}
 x = thisset.pop()
 print(x)
 print(thisset)
 
 
 # The clear() method empties the set:
-thisset = {"apple", "banana", "cherry"}
+thisset = {"A", "B", "C"}
 thisset.clear()
 print(thisset)
 
 # The del keyword will delete the set completely:
-thisset = {"apple", "banana", "cherry"}
+thisset = {"A", "B", "C"}
 del thisset
-print(thisset)
-
+#print(thisset)
 
 ######################################## Loops Sets Items ##################################################################################
 
 # Loop through the set, and print the values:
-thisset = {"apple", "banana", "cherry"}
+thisset = {"A", "B", "C"}
 for x in thisset:
   print(x)
 
@@ -95,25 +94,25 @@ set1.update(set2)
 print(set1)
 
 # Keep the items that exist in both set x, and set y:
-x = {"apple", "banana", "cherry"}
-y = {"google", "microsoft", "apple"}
+x = {"A", "B", "C"}
+y = {"google", "microsoft", "A"}
 x.intersection_update(y)
 print(x)
 
 # Return a set that contains the items that exist in both set x, and set y:
-x = {"apple", "banana", "cherry"}
-y = {"google", "microsoft", "apple"}
+x = {"A", "B", "C"}
+y = {"google", "microsoft", "A"}
 z = x.intersection(y)
 print(z)
 
 # Keep the items that are not present in both sets:
-x = {"apple", "banana", "cherry"}
-y = {"google", "microsoft", "apple"}
+x = {"A", "B", "C"}
+y = {"google", "microsoft", "A"}
 x.symmetric_difference_update(y)
 print(x)
 
 # Return a set that contains all items from both sets, except items that are present in both:
-x = {"apple", "banana", "cherry"}
-y = {"google", "microsoft", "apple"}
+x = {"A", "B", "C"}
+y = {"google", "microsoft", "A"}
 z = x.symmetric_difference(y)
 print(z)
