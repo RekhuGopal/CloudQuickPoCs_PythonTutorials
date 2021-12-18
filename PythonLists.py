@@ -1,4 +1,3 @@
-
 ## python list - ordered
 mylist = ["A", "C", "C"]
 
@@ -21,10 +20,10 @@ thislist = list(("A", "B", "C"))
 print(thislist)
 
 ######################################### Accessing the list ####################################################
-thislist = ["A", "B", "C"]
+thislist = ["A", "B", "C"] # thislist[0]/thislist[-3] =  A , thislist[1]/thislist[-2] =  B , thislist[2]/thislist[-1] =  c
 ## positive indexing
 print(thislist[1])
-## negetive indexing
+## negetive indexing   # length = 3 , negative index = (positive index - length of list)
 print(thislist[-1])
 ## Range of Indexes
 print(thislist[0:2])
@@ -87,7 +86,7 @@ thislist = ["A", "B", "C"]
 thislist.clear()
 print(thislist)
 
-######################################### Remove list items ####################################################
+######################################### Loop list items ######################################################################
 # Loop Through a List
 thislist = ["A", "B", "C"]
 for x in thislist:
@@ -95,7 +94,7 @@ for x in thislist:
 
 # Loop Through the Index Numbers
 thislist = ["A", "B", "C"]
-for i in range(len(thislist)):
+for i in range(len(thislist)): # 0 , 1, 2
   print(thislist[i])
 
 # Using a While Loop
@@ -184,12 +183,3 @@ list1 = ["a", "b" , "c"]
 list2 = [1, 2, 3]
 list1.extend(list2)
 print(list1)
-
-
-
-
-
-
-
-
-

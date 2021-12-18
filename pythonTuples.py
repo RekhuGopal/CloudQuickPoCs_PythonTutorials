@@ -1,70 +1,72 @@
 # Create tuples
-thistuple = ("apple", "banana", "cherry")
+thistuple = ("A", "B", "C")
 print(len(thistuple))
 
 # One item tuple, remember the comma:
-thistuple = ("apple",)
+thistuple = ("A",)
 print(type(thistuple))
 
 #NOT a tuple
-thistuple = ("apple")
+thistuple = ("A")
 print(type(thistuple))
 
 ################################## Access Tuple Items #######################################
 # positive indexing
-thistuple = ("apple", "banana", "cherry")
+thistuple = ("A", "B", "C")  # thistuple[0] =  A , thistuple[1] =  B, thistuple[2] =  C , length = 3
 print(thistuple[1])
 
 # negative indexing
-thistuple = ("apple", "banana", "cherry")
+thistuple = ("A", "B", "C" )  # negetive index =  (positive index - length tuble) , cth negetive index =  2-3 = -1
 print(thistuple[-1])
 
 # range of indexing
-thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+thistuple = ("A", "B", "C", "O", "k", "M", "m")
 print(thistuple[2:5])
 
 # check if item exists
-thistuple = ("apple", "banana", "cherry")
-if "apple" in thistuple:
-  print("Yes, 'apple' is in the fruits tuple")
+thistuple = ("A", "B", "C")
+if "A" in thistuple:
+  print("Yes, 'A' is in the fruits tuple")
 
 ################################## Update Tuple Items #######################################
 # Change Tuple Values
-x = ("apple", "banana", "cherry")
+x = ("A", "B", "C")
+print(type(x))
 y = list(x)
-y[1] = "kiwi"
+print(type(y))
+y[1] = "k"
 x = tuple(y)
 
 print(x)
 
-# Add Items - onvert the tuple into a list, add "orange", and convert it back into a tuple:
-thistuple = ("apple", "banana", "cherry")
+# Add Items - convert the tuple into a list, add "O", and convert it back into a tuple:
+thistuple = ("A", "B", "C")
 y = list(thistuple)
-y.append("orange")
+y.append("O")
 thistuple = tuple(y)
 
-# Add Items - Create a new tuple with the value "orange", and add that tuple:
-thistuple = ("apple", "banana", "cherry")
-y = ("orange",)
+# Add Items - Create a new tuple with the value "O", and add that tuple:
+thistuple = ("A", "B", "C")
+y = ("O",)
 thistuple += y
 print(thistuple)
 
 # Remove Items
-thistuple = ("apple", "banana", "cherry")
+thistuple = ("A", "B", "C")
 y = list(thistuple)
-y.remove("apple")
+y.remove("A")
 thistuple = tuple(y)
 
 ################################## Unpack Tuple Items #######################################
 # Unpacking a tuple:
-fruits = ("apple", "banana", "cherry")
+fruits = ("A", "B", "C")
 (green, yellow, red) = fruits
 print(green)
 print(yellow)
 print(red)
 
 # Using Asterisk* : Assign the rest of the values as a list called "red"
-fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+fruits = ("A", "B", "C", "s", "r")
 (green, yellow, *red) = fruits
 print(green)
 print(yellow)
@@ -73,17 +75,17 @@ print(red)
 ################################## Loop Through a Tuple #######################################
 
 # for loop
-thistuple = ("apple", "banana", "cherry")
+thistuple = ("A", "B", "C")
 for x in thistuple:
   print(x)
 
 # for loop with range() and len()
-thistuple = ("apple", "banana", "cherry")
+thistuple = ("A", "B", "C")
 for i in range(len(thistuple)):
   print(thistuple[i])
 
 # whie loop
-thistuple = ("apple", "banana", "cherry")
+thistuple = ("A", "B", "C")
 i = 0
 while i < len(thistuple):
   print(thistuple[i])
@@ -99,12 +101,7 @@ tuple3 = tuple1 + tuple2
 print(tuple3)
 
 # Multiply the fruits tuple by 2:
-fruits = ("apple", "banana", "cherry")
+fruits = ("A", "B", "C")
 mytuple = fruits * 2
 
 print(mytuple)
-
-
-
-
-
