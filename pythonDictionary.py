@@ -168,15 +168,6 @@ thisdict = {
 del thisdict["model"]
 print(thisdict)
 
-# The del keyword removes the item with the specified key name:
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
-del thisdict["model"]
-print(thisdict)
-
 # The clear() method empties the dictionary:
 thisdict = {
   "brand": "Ford",
@@ -188,9 +179,15 @@ print(thisdict)
 
 ############################################### Loop Dictionary Items  ###################################################################
 # Print all key names in the dictionary, one by one:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
 for x in thisdict:
       print(x)
 
+print("first printing done")
 # Print all values in the dictionary, one by one:
 for x in thisdict:
       print(thisdict[x])
@@ -226,7 +223,7 @@ thisdict = {
 mydict = dict(thisdict)
 print(mydict)
 
-############################################### Copy Dictionary Items  ##########################################################
+############################################### Nested Dictionary Items  ##########################################################
 # Create a dictionary that contain three dictionaries:
 myfamily = {
   "child1" : {

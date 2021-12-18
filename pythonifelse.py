@@ -1,8 +1,9 @@
 # If statement:
 a = 33
 b = 200
-if b > a:
+if b > a: # execution goes inside the if loof if evaluation of condition is returning true
   print("b is greater than a")
+  print("multiline execution")
 
 # If , Elif , Else
 a = 200
@@ -21,25 +22,39 @@ if a > b: print("a is greater than b")
 a = 2
 b = 330
 print("A") if a > b else print("B")
+if a > b :
+  print("A")
+else:
+  print("B")   
 
 # One line if else statement, with 3 conditions:
 a = 330
 b = 330
 print("A") if a > b else print("=") if a == b else print("B")
+if a > b:
+  print("A")
+elif a == b:
+  print("=")
+else:
+  print("B")    
 
 
 # Test if a is greater than b, AND if c is greater than a:
 a = 200
 b = 33
 c = 500
-if a > b and c > a:
+if a > b and c > a:  ## True AND True = True
   print("Both conditions are True")
+
+if a > b :
+  if c > a :
+    print("Both conditions are True")  
 
 # Test if a is greater than b, OR if a is greater than c:
 a = 200
 b = 33
 c = 500
-if a > b or a > c:
+if a > b or a > c: ## True OR False = True
   print("At least one of the conditions is True")
 
 # Nested If

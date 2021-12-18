@@ -2,7 +2,7 @@
 i = 1
 while i < 6:
   print(i)
-  i += 1
+  i += 1 # i = i+1
 
 # The break Statement
 # The break statement we can stop the loop even if the while condition is true:
