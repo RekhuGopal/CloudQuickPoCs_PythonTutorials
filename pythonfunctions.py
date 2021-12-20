@@ -1,12 +1,14 @@
 # Creating a Function
 def my_function():
-  print("Hello from a function")
+  print("Hello from a CQPOCS")
 
 # Calling a Function
-def my_function():
-      print("Hello from a function")
+def my_function2():
+      print("Hello from a CQPOCS2")
 
+# calling function
 my_function()
+my_function2()
 
 # Arguments
 # Information can be passed into functions as arguments.
@@ -39,7 +41,7 @@ my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")
 
 # If the number of keyword arguments is unknown, add a double ** before the parameter name:
 def my_function(**kid):
-      print("His last name is " + kid["lname"])
+      print("His last name is " + kid["fname"])
 
 my_function(fname = "Tobias", lname = "Refsnes")
 
